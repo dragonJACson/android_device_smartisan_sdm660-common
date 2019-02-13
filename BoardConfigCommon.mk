@@ -63,7 +63,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/smartisan/sdm660
-TARGET_KERNEL_CONFIG := mokee_osborn_defconfig
+TARGET_KERNEL_CONFIG := lineageos_osborn_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
 
 # HAX: SELinux Permissive - Remove ASAP
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -129,11 +130,11 @@ TARGET_LD_SHIM_LIBS += /vendor/lib/libmmcamera_ppeiscore.so|/vendor/lib/libshim_
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
-WITH_MOKEE_CHARGER := false
+WITH_LINEAGE_CHARGER := false
 
 # MK Hardware
-BOARD_USES_MOKEE_HARDWARE := true
-BOARD_HARDWARE_CLASS += hardware/mokee/mkhw
+BOARD_USES_LINEAGE_HARDWARE := true
+BOARD_HARDWARE_CLASS += hardware/lineage/lineagehw
 
 # CNE and DPM
 BOARD_USES_QCNE := true
