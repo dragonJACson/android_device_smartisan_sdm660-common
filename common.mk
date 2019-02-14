@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The MoKee Open Source Project
+# Copyright (C) 2018-2019 The MoKee Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -204,13 +204,10 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl-qti \
-    android.hardware.gnss@1.0-service-qti \
     libgnss \
     libgnsspps \
     libgps.utils \
     libloc_core \
-    libloc_pla \
-    libloc_stub \
     liblocation_api
 
 PRODUCT_COPY_FILES += \
@@ -262,9 +259,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.smartisan
 
-# LiveDisplay native
+# LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@1.0-service-sdm
+    vendor.lineage.livedisplay@2.0-service-sdm
 
 # Media
 PRODUCT_COPY_FILES += \
